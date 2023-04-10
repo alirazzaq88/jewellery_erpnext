@@ -1,0 +1,338 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:WO-{item_code}-{####}-{purity_sequence}",
+ "creation": "2023-03-03 22:09:50.290798",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details_tab",
+  "sales_order_item",
+  "sales_order_id",
+  "item_code",
+  "purity",
+  "purity_sequence",
+  "first_operation",
+  "amended_from",
+  "customer_code",
+  "column_break_lhbfx",
+  "company",
+  "posting_date",
+  "order_branch_name",
+  "delivery_date",
+  "column_break_nmpbj",
+  "project_name",
+  "production_plan_id",
+  "order_type",
+  "section_break_royco",
+  "master_bom",
+  "design_id",
+  "serial_id",
+  "item_category",
+  "item_sub_category",
+  "column_break_mrmf8",
+  "design_id_bom",
+  "serial_id_bom",
+  "setting_type",
+  "diamond_quality",
+  "diamond_grade",
+  "estimated_due_date",
+  "column_break_ckmzl",
+  "qty",
+  "production_order_remarks",
+  "order_details_tab",
+  "order_form_id",
+  "column_break_0hg6a",
+  "quotation_id",
+  "section_break_byj5g",
+  "order_form_date",
+  "service_type",
+  "column_break_acoov",
+  "parcel_place",
+  "customer_po_no",
+  "salesman_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "sales_order_item",
+   "fieldtype": "Link",
+   "label": "Sales Order Item",
+   "options": "Sales Order Item"
+  },
+  {
+   "fieldname": "purity",
+   "fieldtype": "Float",
+   "label": "Purity"
+  },
+  {
+   "fieldname": "purity_sequence",
+   "fieldtype": "Int",
+   "label": "Purity Sequence"
+  },
+  {
+   "fieldname": "first_operation",
+   "fieldtype": "Link",
+   "label": "First Operation",
+   "options": "Operation"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Production Order",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "fetch_from": "sales_order_id.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "order_branch_name",
+   "fieldtype": "Data",
+   "label": "Order Branch name"
+  },
+  {
+   "fieldname": "delivery_date",
+   "fieldtype": "Date",
+   "label": "Delivery Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "production_plan_id",
+   "fieldtype": "Link",
+   "label": "Production Plan ID",
+   "options": "Manufacturing Plan"
+  },
+  {
+   "fieldname": "order_type",
+   "fieldtype": "Data",
+   "label": "Order Type "
+  },
+  {
+   "fieldname": "section_break_royco",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "item_code.master_bom",
+   "fieldname": "master_bom",
+   "fieldtype": "Link",
+   "label": "Master BOM",
+   "options": "BOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "serial_id",
+   "fieldtype": "Link",
+   "label": "Serial ID",
+   "options": "Serial No"
+  },
+  {
+   "fetch_from": "item_code.item_category",
+   "fieldname": "item_category",
+   "fieldtype": "Link",
+   "label": "Item Category",
+   "options": "Attribute Value",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.item_subcategory",
+   "fieldname": "item_sub_category",
+   "fieldtype": "Link",
+   "label": "Item Sub Category",
+   "options": "Attribute Value",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.setting_type",
+   "fieldname": "setting_type",
+   "fieldtype": "Link",
+   "label": "Setting Type",
+   "options": "Attribute Value",
+   "read_only": 1
+  },
+  {
+   "fieldname": "diamond_quality",
+   "fieldtype": "Link",
+   "label": "Diamond Quality",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "diamond_grade",
+   "fieldtype": "Link",
+   "label": "Diamond Grade",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "estimated_due_date",
+   "fieldtype": "Date",
+   "label": "Estimated Due Date"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "production_order_remarks",
+   "fieldtype": "Small Text",
+   "label": "Production Order Remarks"
+  },
+  {
+   "fieldname": "column_break_lhbfx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mrmf8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Order Details"
+  },
+  {
+   "fieldname": "order_form_id",
+   "fieldtype": "Link",
+   "label": "Order Form Id",
+   "options": "CAD Order"
+  },
+  {
+   "fieldname": "sales_order_id",
+   "fieldtype": "Link",
+   "label": "Sales Order Id",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "quotation_id",
+   "fieldtype": "Link",
+   "label": "Quotation id",
+   "options": "Quotation"
+  },
+  {
+   "fieldname": "section_break_byj5g",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "order_form_date",
+   "fieldtype": "Date",
+   "label": "Order form date"
+  },
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Data",
+   "label": "Service Type"
+  },
+  {
+   "fieldname": "parcel_place",
+   "fieldtype": "Data",
+   "label": "Parcel Place"
+  },
+  {
+   "fieldname": "column_break_0hg6a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_po_no",
+   "fieldtype": "Data",
+   "label": "Customer PO No"
+  },
+  {
+   "fieldname": "salesman_name",
+   "fieldtype": "Data",
+   "label": "Salesman Name"
+  },
+  {
+   "fieldname": "column_break_nmpbj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_acoov",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ckmzl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "sales_order_id.customer",
+   "fieldname": "customer_code",
+   "fieldtype": "Link",
+   "label": "Customer Code",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "design_id",
+   "fieldtype": "Data",
+   "label": "Design ID"
+  },
+  {
+   "fieldname": "serial_id_bom",
+   "fieldtype": "Link",
+   "label": "Serial ID BOM",
+   "options": "BOM"
+  },
+  {
+   "fieldname": "design_id_bom",
+   "fieldtype": "Link",
+   "label": "Design ID BOM",
+   "options": "BOM"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-30 23:08:50.934628",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Production Order",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

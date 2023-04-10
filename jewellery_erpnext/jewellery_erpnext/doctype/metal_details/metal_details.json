@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-04 11:43:30.723012",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "operation",
+  "in_weight",
+  "purity",
+  "available_weight",
+  "column_break_5",
+  "fine_weight",
+  "alloy_weight",
+  "melting_lot",
+  "parent_melting_lot",
+  "section_break_10",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "in_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "In Weight"
+  },
+  {
+   "fieldname": "purity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Purity"
+  },
+  {
+   "fieldname": "fine_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Fine Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "alloy_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Alloy Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "operation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Operation",
+   "options": "Operation"
+  },
+  {
+   "fieldname": "melting_lot",
+   "fieldtype": "Link",
+   "label": "Melting Lot",
+   "options": "Melting Lot"
+  },
+  {
+   "fieldname": "parent_melting_lot",
+   "fieldtype": "Link",
+   "label": "Parent Melting Lot",
+   "options": "Parent Melting Lot"
+  },
+  {
+   "fieldname": "available_weight",
+   "fieldtype": "Float",
+   "label": "Available Weight"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-08 19:13:19.906449",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Metal Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

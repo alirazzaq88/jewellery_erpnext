@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "autoname": "format:{workstation}-{date_from} To {date_to}",
+ "creation": "2023-01-27 12:15:01.864287",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "dust_added",
+  "date_from",
+  "date_to",
+  "column_break_5",
+  "total_metal_loss",
+  "gross_pure_metal_loss",
+  "loss_recovered",
+  "unrecovered_loss",
+  "gold_loss",
+  "section_break_10",
+  "metal_loss_by_purity",
+  "section_break_13",
+  "refining_details",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "dust_added",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Dust Added",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_from",
+   "fieldtype": "Date",
+   "label": "Date From"
+  },
+  {
+   "fieldname": "date_to",
+   "fieldtype": "Date",
+   "label": "Date To"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_metal_loss",
+   "fieldtype": "Float",
+   "label": "Gross Touch Metal Loss"
+  },
+  {
+   "fieldname": "gross_pure_metal_loss",
+   "fieldtype": "Float",
+   "label": "Gross Pure Metal Loss"
+  },
+  {
+   "fieldname": "loss_recovered",
+   "fieldtype": "Float",
+   "label": "Loss Recovered"
+  },
+  {
+   "fieldname": "unrecovered_loss",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Unrecovered Loss"
+  },
+  {
+   "fieldname": "gold_loss",
+   "fieldtype": "Float",
+   "label": "Gold Loss",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "metal_loss_by_purity",
+   "fieldtype": "Table",
+   "label": "Metal Loss By Purity",
+   "options": "Metal Loss Purity"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Metal Loss",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "refining_details",
+   "fieldtype": "Table",
+   "label": "Refining Details",
+   "options": "Refining Details",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-02-17 13:07:19.617213",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Employee Metal Loss",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

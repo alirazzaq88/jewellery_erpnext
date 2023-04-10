@@ -1,0 +1,378 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-06 17:20:29.757044",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "design_type",
+  "tag__design_id",
+  "tag_id",
+  "reference_designid",
+  "reference_tagid",
+  "category",
+  "subcategory",
+  "column_break",
+  "project",
+  "design_image",
+  "image_preview",
+  "section_break_10",
+  "design_image1",
+  "image_preview1",
+  "column_break9",
+  "design_image2",
+  "image_preview2",
+  "column_break_10",
+  "design_image3",
+  "image_preview3",
+  "column_break_11",
+  "design_image4",
+  "image_preview4",
+  "section_break_11",
+  "setting_type",
+  "sub_setting_type",
+  "sub_setting_type2",
+  "gold_target",
+  "diamond_target",
+  "column_break_16",
+  "product_size",
+  "section_break_32",
+  "gemstone_type1",
+  "column_break_34",
+  "gemstone_type2",
+  "column_break_36",
+  "gemstone_type3",
+  "column_break_38",
+  "gemstone_type4",
+  "column_break_40",
+  "gemstone_type5",
+  "column_break_42",
+  "gemstone_type6",
+  "column_break_44",
+  "gemstone_type7",
+  "column_break_46",
+  "gemstone_type8",
+  "section_break_48",
+  "qty",
+  "delivery_date",
+  "estimated_duedate",
+  "remarks",
+  "budget"
+ ],
+ "fields": [
+  {
+   "fieldname": "design_type",
+   "fieldtype": "Select",
+   "label": "Design Type",
+   "options": "\nNew Creation\nModification\nIs Matching"
+  },
+  {
+   "depends_on": "eval:((doc.design_type==\"Modification\"))",
+   "fieldname": "tag__design_id",
+   "fieldtype": "Link",
+   "label": "Design ID",
+   "options": "Item"
+  },
+  {
+   "depends_on": "eval:((doc.design_type==\"Is Matching\"))",
+   "fieldname": "reference_tagid",
+   "fieldtype": "Link",
+   "label": "Reference Tag ID ",
+   "options": "Item Tag"
+  },
+  {
+   "fetch_from": "tag__design_id.item_category",
+   "fetch_if_empty": 1,
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "Attribute Value"
+  },
+  {
+   "fetch_from": "tag__design_id.item_subcategory",
+   "fetch_if_empty": 1,
+   "fieldname": "subcategory",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sub Category ",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "design_image1",
+   "fieldtype": "Attach Image",
+   "label": "Design image1"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "image_preview1",
+   "fieldtype": "Image",
+   "label": "Image Preview1",
+   "options": "design_image1"
+  },
+  {
+   "fieldname": "column_break9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_image2",
+   "fieldtype": "Attach Image",
+   "label": "Design Image2"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "image_preview2",
+   "fieldtype": "Image",
+   "in_preview": 1,
+   "label": "Image Preview2",
+   "options": "design_image2"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_image3",
+   "fieldtype": "Attach Image",
+   "label": "Design image3"
+  },
+  {
+   "fieldname": "image_preview3",
+   "fieldtype": "Image",
+   "label": "Image Preview3",
+   "options": "design_image3"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_image4",
+   "fieldtype": "Attach Image",
+   "label": "Design Image4"
+  },
+  {
+   "fieldname": "image_preview4",
+   "fieldtype": "Image",
+   "label": "Image Preview4",
+   "options": "design_image4"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "tag__design_id.setting_type",
+   "fetch_if_empty": 1,
+   "fieldname": "setting_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Setting Type ",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "sub_setting_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sub Setting Type  ",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "sub_setting_type2",
+   "fieldtype": "Link",
+   "label": "Sub Setting Type2",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "gold_target",
+   "fieldtype": "Data",
+   "label": "Gold Target"
+  },
+  {
+   "fieldname": "diamond_target",
+   "fieldtype": "Data",
+   "label": "Diamond Target"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_size",
+   "fieldtype": "Data",
+   "label": "Product Size"
+  },
+  {
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gemstone_type2",
+   "fieldtype": "Link",
+   "label": "Gemstone Type2",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gemstone_type3",
+   "fieldtype": "Link",
+   "label": "Gemstone Type3",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "column_break_38",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gemstone_type4",
+   "fieldtype": "Link",
+   "label": "Gemstone Type4",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "gemstone_type5",
+   "fieldtype": "Link",
+   "label": "Gemstone Type5",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gemstone_type6",
+   "fieldtype": "Link",
+   "label": "Gemstone Type6",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gemstone_type7",
+   "fieldtype": "Link",
+   "label": "Gemstone Type7",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "column_break_46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gemstone_type8",
+   "fieldtype": "Link",
+   "label": "Gemstone Type8",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "section_break_48",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "No of Designs "
+  },
+  {
+   "fieldname": "delivery_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Delivery Date "
+  },
+  {
+   "fieldname": "estimated_duedate",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Estimated Due Date"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Order Remarks "
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Data",
+   "label": "Budget"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "depends_on": "eval:(doc.design_type==\"Modification\")",
+   "fetch_from": "tag__design_id.tag_no",
+   "fieldname": "tag_id",
+   "fieldtype": "Link",
+   "label": "Serial No",
+   "options": "Serial No"
+  },
+  {
+   "fieldname": "gemstone_type1",
+   "fieldtype": "Link",
+   "label": "Gemstone Type1",
+   "options": "Attribute Value"
+  },
+  {
+   "depends_on": "eval:((doc.design_type==\"Is Matching\")||(doc.design_type==\"New Creation\"))",
+   "fetch_from": "tag__design_id.image",
+   "fetch_if_empty": 1,
+   "fieldname": "design_image",
+   "fieldtype": "Attach Image",
+   "label": "Design Image",
+   "length": 5
+  },
+  {
+   "fetch_from": "tag__design_id.image",
+   "fieldname": "image_preview",
+   "fieldtype": "Image",
+   "in_preview": 1,
+   "label": "Image",
+   "options": "design_image"
+  },
+  {
+   "depends_on": "eval:((doc.design_type==\"Is Matching\"))",
+   "fieldname": "reference_designid",
+   "fieldtype": "Link",
+   "label": "Reference Design ID",
+   "options": "Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-10 12:16:22.016002",
+ "modified_by": "Administrator",
+ "module": "Gurukrupa Exports",
+ "name": "Sketch Order Form Category",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

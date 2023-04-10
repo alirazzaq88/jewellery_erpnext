@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-11-08 13:15:32.311492",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parent_melting_lot_name",
+  "column_break_3",
+  "product_purity"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "parent_melting_lot_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "product_purity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Product Purity",
+   "options": "Purity",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-01-11 17:51:31.444370",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Parent Melting Lot",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

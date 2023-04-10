@@ -1,0 +1,160 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:DP-{#####}",
+ "creation": "2022-07-08 18:51:27.948713",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "price_list",
+  "customer",
+  "diamond_code",
+  "diamond_type",
+  "stone_shape",
+  "diamond_quality",
+  "column_break_8",
+  "price_list_type",
+  "from_weight",
+  "to_weight",
+  "sieve_size_range",
+  "size_in_mm",
+  "rate",
+  "handling_rate",
+  "currency",
+  "effective_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "price_list",
+   "fieldtype": "Link",
+   "label": "Price List",
+   "options": "Price List",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "diamond_code",
+   "fieldtype": "Data",
+   "label": "Diamond Code"
+  },
+  {
+   "fieldname": "diamond_type",
+   "fieldtype": "Link",
+   "label": "Diamond Type",
+   "options": "Attribute Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stone_shape",
+   "fieldtype": "Link",
+   "label": "Diamond Shape",
+   "options": "Attribute Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "diamond_quality",
+   "fieldtype": "Link",
+   "label": "Diamond Quality",
+   "options": "Attribute Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "price_list_type",
+   "fieldtype": "Select",
+   "label": "Price List Type",
+   "options": "Sieve Size Range\nWeight (in cts)\nSize (in mm)",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:(doc.price_list_type) =='Weight (in cts)'",
+   "fieldname": "from_weight",
+   "fieldtype": "Float",
+   "label": "From Weight (in cts)",
+   "mandatory_depends_on": "eval:(doc.price_list_type) =='Weight (in cts)'"
+  },
+  {
+   "depends_on": "eval:(doc.price_list_type) =='Weight (in cts)'",
+   "fieldname": "to_weight",
+   "fieldtype": "Float",
+   "label": "To Weight (in cts)",
+   "mandatory_depends_on": "eval:(doc.price_list_type) =='Weight (in cts)'"
+  },
+  {
+   "depends_on": "eval:doc.price_list_type=='Sieve Size Range'",
+   "fieldname": "sieve_size_range",
+   "fieldtype": "Link",
+   "label": "Sieve Size Range",
+   "mandatory_depends_on": "eval:(doc.price_list_type) =='Sieve Size Range'",
+   "options": "Attribute Value"
+  },
+  {
+   "depends_on": "eval:(doc.price_list_type) =='Size (in mm)'",
+   "fieldname": "size_in_mm",
+   "fieldtype": "Float",
+   "label": "Size (in mm)",
+   "mandatory_depends_on": "eval:(doc.price_list_type) == 'Size (in mm)'"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "label": "Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "handling_rate",
+   "fieldtype": "Currency",
+   "label": "Diamond Handling Rate"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "effective_from",
+   "fieldtype": "Date",
+   "label": "Effective From",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-15 00:28:49.747636",
+ "modified_by": "Administrator",
+ "module": "Gurukrupa Exports",
+ "name": "Diamond Price List",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

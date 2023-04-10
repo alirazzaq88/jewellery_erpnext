@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-10 14:39:21.962396",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_attribute",
+  "attribute_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_attribute",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Attribute",
+   "options": "Item Attribute",
+   "reqd": 1
+  },
+  {
+   "fieldname": "attribute_value",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Attribute Value",
+   "options": "Attribute Value",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-31 16:24:35.982824",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Item Template Attribute",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

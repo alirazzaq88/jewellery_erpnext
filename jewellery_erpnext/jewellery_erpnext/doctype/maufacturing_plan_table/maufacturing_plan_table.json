@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-29 16:11:22.088507",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sales_order",
+  "item_code",
+  "mould_no",
+  "pending_qty",
+  "production_order_qty",
+  "qty_per_production_order",
+  "subcontracting"
+ ],
+ "fields": [
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "mould_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Mould No"
+  },
+  {
+   "fieldname": "pending_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Pending Qty"
+  },
+  {
+   "fieldname": "production_order_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Production Order Qty"
+  },
+  {
+   "fieldname": "qty_per_production_order",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Qty Per Production Order"
+  },
+  {
+   "default": "0",
+   "fieldname": "subcontracting",
+   "fieldtype": "Check",
+   "label": "Subcontracting"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-29 16:11:22.088507",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Maufacturing Plan Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

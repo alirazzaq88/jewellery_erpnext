@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-26 15:58:36.841484",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "from_job_card",
+  "to_job_card",
+  "gross_wt",
+  "purity",
+  "net_wt",
+  "uom",
+  "from_combine_job_card",
+  "to_combine_job_card"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "from_job_card",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "From Job Card",
+   "options": "Job Card"
+  },
+  {
+   "fieldname": "to_job_card",
+   "fieldtype": "Link",
+   "label": "To Job Card",
+   "options": "Job Card"
+  },
+  {
+   "fieldname": "gross_wt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Gross Wt"
+  },
+  {
+   "fieldname": "purity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Purity"
+  },
+  {
+   "fieldname": "net_wt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Net Wt"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "from_combine_job_card",
+   "fieldtype": "Link",
+   "label": "From Combine Job Card",
+   "options": "Combine Job Card"
+  },
+  {
+   "fieldname": "to_combine_job_card",
+   "fieldtype": "Link",
+   "label": "To Combine Job Card",
+   "options": "Combine Job Card"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-08-29 16:55:21.944222",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Job Card Internal Transfer Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

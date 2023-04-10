@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SL-{####}",
+ "creation": "2023-03-04 11:39:42.215892",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "purity",
+  "amended_from",
+  "previous_operation",
+  "current_operation",
+  "operation_cards_section",
+  "get_operation_cards",
+  "slip_operation_card_detial"
+ ],
+ "fields": [
+  {
+   "fieldname": "purity",
+   "fieldtype": "Float",
+   "label": "Purity"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Slip",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "previous_operation",
+   "fieldtype": "Link",
+   "label": "Previous Operation",
+   "options": "Operation"
+  },
+  {
+   "fieldname": "slip_operation_card_detial",
+   "fieldtype": "Table",
+   "label": "Slip Operation Card Detial",
+   "options": "Slip Operation Card Detial"
+  },
+  {
+   "fieldname": "get_operation_cards",
+   "fieldtype": "Button",
+   "label": "Get Operation Cards"
+  },
+  {
+   "fieldname": "operation_cards_section",
+   "fieldtype": "Section Break",
+   "label": "OPERATION CARDS"
+  },
+  {
+   "fieldname": "current_operation",
+   "fieldtype": "Link",
+   "label": "Operation",
+   "options": "Operation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-08 23:33:20.761688",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Slip",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

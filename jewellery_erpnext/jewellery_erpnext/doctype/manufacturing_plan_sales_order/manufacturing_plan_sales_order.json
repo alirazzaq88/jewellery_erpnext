@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-29 17:40:05.967119",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "select",
+  "sales_order"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "select",
+   "fieldtype": "Check",
+   "label": "Select"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Sales Order",
+   "options": "Sales Order"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-29 17:40:05.967119",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Manufacturing Plan Sales Order",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

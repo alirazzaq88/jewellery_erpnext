@@ -1,0 +1,221 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-25 15:52:54.046784",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rpt_type",
+  "column_break_2",
+  "cad_weight",
+  "column_break_20",
+  "cad_to_rpt_ratio",
+  "column_break_4",
+  "estimated_rpt_wt",
+  "column_break_6",
+  "rpt_to_wax_ratio",
+  "column_break_8",
+  "estimated_wax_wt",
+  "section_break_10",
+  "wax_to_10kt_gold_ratio",
+  "estimated_10kt_gold_wt",
+  "column_break_13",
+  "wax_to_14kt_gold_ratio",
+  "estimated_14kt_gold_wt",
+  "column_break_16",
+  "wax_to_18kt_gold_ratio",
+  "estimated_18kt_gold_wt",
+  "column_break_19",
+  "wax_to_22kt_gold_ratio",
+  "estimated_22kt_gold_wt",
+  "section_break_22",
+  "wax_to_silver_ratio",
+  "estimated_silver_wt",
+  "section_break_27",
+  "touch",
+  "estimated_finish_gold_wt",
+  "estimated_finding_gold_wt_bom",
+  "column_break_30",
+  "total_gold_wt",
+  "estimated_gold_loss_wt",
+  "avg_manufacturing_loss"
+ ],
+ "fields": [
+  {
+   "fieldname": "rpt_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "RPT Type",
+   "options": "\nD.L.P\nCASTABLE\nGERMAN"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cad_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Cad Weight"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cad_to_rpt_ratio",
+   "fieldtype": "Float",
+   "label": "Cad to RPT Ratio"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimated_rpt_wt",
+   "fieldtype": "Float",
+   "label": "Estimated RPT WT."
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rpt_to_wax_ratio",
+   "fieldtype": "Float",
+   "label": "RPT to Wax Ratio"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimated_wax_wt",
+   "fieldtype": "Float",
+   "label": "Estimated WAX WT."
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "wax_to_10kt_gold_ratio",
+   "fieldtype": "Float",
+   "label": "Wax TO 10KT Gold Ratio"
+  },
+  {
+   "fieldname": "estimated_10kt_gold_wt",
+   "fieldtype": "Float",
+   "label": "Estimated 10KT Gold WT."
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "wax_to_14kt_gold_ratio",
+   "fieldtype": "Float",
+   "label": "Wax TO 14KT Gold Ratio"
+  },
+  {
+   "fieldname": "estimated_14kt_gold_wt",
+   "fieldtype": "Float",
+   "label": "Estimated 14KT Gold WT."
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "wax_to_18kt_gold_ratio",
+   "fieldtype": "Float",
+   "label": "Wax TO 18KT Gold Ratio"
+  },
+  {
+   "fieldname": "estimated_18kt_gold_wt",
+   "fieldtype": "Float",
+   "label": "Estimated 18KT Gold WT."
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "wax_to_22kt_gold_ratio",
+   "fieldtype": "Float",
+   "label": "Wax TO 22KT Gold Ratio"
+  },
+  {
+   "fieldname": "estimated_22kt_gold_wt",
+   "fieldtype": "Float",
+   "label": "Estimated 22KT Gold WT."
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "wax_to_silver_ratio",
+   "fieldtype": "Float",
+   "label": "Wax to Silver Ratio"
+  },
+  {
+   "fieldname": "estimated_silver_wt",
+   "fieldtype": "Float",
+   "label": "Estimated Silver WT."
+  },
+  {
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "estimated_finish_gold_wt",
+   "fieldtype": "Float",
+   "label": "Estimated Finish Gold Wt"
+  },
+  {
+   "fieldname": "estimated_finding_gold_wt_bom",
+   "fieldtype": "Float",
+   "label": "Estimated Finding Gold Wt. Bom"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimated_gold_loss_wt",
+   "fieldtype": "Float",
+   "label": "Estimated Gold Loss Wt"
+  },
+  {
+   "fieldname": "avg_manufacturing_loss",
+   "fieldtype": "Float",
+   "label": "Avg Manufacturing Loss"
+  },
+  {
+   "fieldname": "touch",
+   "fieldtype": "Select",
+   "label": "Touch",
+   "options": "\n10KT\n14KT\n18KT\n22KT\nSilver"
+  },
+  {
+   "fieldname": "total_gold_wt",
+   "fieldtype": "Float",
+   "label": "Total Gold Wt"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-25 19:25:06.253001",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Cad To Finish Weight Estimated Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

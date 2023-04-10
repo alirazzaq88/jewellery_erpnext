@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-25 12:40:30.300036",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_card",
+  "production_item",
+  "for_quantity",
+  "work_order",
+  "column_break_5",
+  "stock_entry",
+  "submitted"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_card",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Card",
+   "options": "Job Card",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "job_card.production_item",
+   "fieldname": "production_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Production Item",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "job_card.for_quantity",
+   "fieldname": "for_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "For Quantity",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "job_card.work_order",
+   "fieldname": "work_order",
+   "fieldtype": "Link",
+   "label": "Work Order",
+   "options": "Work Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Link",
+   "label": "Stock Entry",
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.stock_entry",
+   "fieldname": "submitted",
+   "fieldtype": "Check",
+   "label": "submitted",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-09 18:03:46.544691",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Combine Job Card Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,33 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-08 23:05:28.500995",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "operation_card"
+ ],
+ "fields": [
+  {
+   "fieldname": "operation_card",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Operation Card",
+   "options": "Operation Card"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-08 23:05:28.500995",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Slip Operation Card Detial",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,156 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-30 13:10:30.963414",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "touch",
+  "employee",
+  "operation",
+  "color",
+  "tree_number",
+  "tree_wax_wt",
+  "computed_gold_wt",
+  "column_break_6ug6u",
+  "flask_size",
+  "used_gold_count",
+  "amended_from",
+  "issue_gold",
+  "batch_issue",
+  "receive_gold",
+  "batch_recieve",
+  "pending_gold",
+  "section_break_rr9oa",
+  "main_slip_batch"
+ ],
+ "fields": [
+  {
+   "fieldname": "touch",
+   "fieldtype": "Data",
+   "label": "Touch"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "operation",
+   "fieldtype": "Link",
+   "label": "Operation",
+   "options": "Operation"
+  },
+  {
+   "depends_on": "eval: doc.operation == 'Casting'",
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "depends_on": "eval: doc.operation == 'Casting'",
+   "fieldname": "tree_number",
+   "fieldtype": "Int",
+   "label": "Tree Number"
+  },
+  {
+   "depends_on": "eval: doc.operation == 'Casting'",
+   "fieldname": "tree_wax_wt",
+   "fieldtype": "Float",
+   "label": "Tree Wax Wt"
+  },
+  {
+   "depends_on": "eval: doc.operation == 'Casting'",
+   "fieldname": "computed_gold_wt",
+   "fieldtype": "Float",
+   "label": "Computed Gold Wt"
+  },
+  {
+   "depends_on": "eval: doc.operation == 'Casting'",
+   "fieldname": "flask_size",
+   "fieldtype": "Data",
+   "label": "Flask Size"
+  },
+  {
+   "fieldname": "used_gold_count",
+   "fieldtype": "Data",
+   "label": "Used Gold Count"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Main Slip",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "issue_gold",
+   "fieldtype": "Float",
+   "label": "Issue Gold"
+  },
+  {
+   "fieldname": "batch_issue",
+   "fieldtype": "Float",
+   "label": "Batch Issue"
+  },
+  {
+   "fieldname": "receive_gold",
+   "fieldtype": "Float",
+   "label": "Receive Gold"
+  },
+  {
+   "fieldname": "batch_recieve",
+   "fieldtype": "Float",
+   "label": "Batch Recieve"
+  },
+  {
+   "fieldname": "pending_gold",
+   "fieldtype": "Float",
+   "label": "Pending Gold"
+  },
+  {
+   "fieldname": "main_slip_batch",
+   "fieldtype": "Table",
+   "label": "Main Slip Batch",
+   "options": "Main Slip Batch"
+  },
+  {
+   "fieldname": "column_break_6ug6u",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_rr9oa",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-30 15:04:35.113800",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Main Slip",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

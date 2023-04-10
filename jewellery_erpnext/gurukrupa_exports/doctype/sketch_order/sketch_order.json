@@ -1,0 +1,886 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{sketch_order_form}-{sketch_order_form_index}",
+ "creation": "2022-05-24 18:26:53.678772",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_name",
+  "section_break_2",
+  "order_date",
+  "delivery_days",
+  "delivery_date1",
+  "estimated_duedate",
+  "customer_code",
+  "column_break_5",
+  "project",
+  "po_number",
+  "order_type",
+  "salesman_name",
+  "design_by",
+  "section_break_10",
+  "sketch_order_form",
+  "column_break_2",
+  "sketch_order_form_detail",
+  "sketch_order_form_category",
+  "index",
+  "amended_from",
+  "section_break_8",
+  "season",
+  "column_break_10",
+  "collection",
+  "column_break_12",
+  "design_style",
+  "section_break_25",
+  "design_type",
+  "tag__design_id",
+  "item_code",
+  "tag_id",
+  "master_bom_no",
+  "reference_designid",
+  "reference_tagid",
+  "column_break_32",
+  "category",
+  "subcategory",
+  "section_break_34",
+  "design_image",
+  "image_preview",
+  "column_48",
+  "sketch_image",
+  "sketch_image_preview",
+  "section_break_33",
+  "design_image1",
+  "image_preview1",
+  "column_break_37",
+  "design_image2",
+  "image_preview2",
+  "column_42",
+  "design_image3",
+  "image_preview3",
+  "column_45",
+  "design_image4",
+  "image_preview4",
+  "section_break_56",
+  "basic_details",
+  "market",
+  "age",
+  "gender",
+  "function",
+  "section_break_35",
+  "concept_type",
+  "nature",
+  "setting_style",
+  "animal",
+  "god",
+  "temple",
+  "birds",
+  "shape",
+  "section_break_71",
+  "creativity_type",
+  "stepping",
+  "fusion",
+  "drops",
+  "coin",
+  "column_break_77",
+  "gold_wire",
+  "gold_ball",
+  "flows",
+  "nagas",
+  "section_break_82",
+  "setting_type",
+  "subsetting_type1",
+  "sub_setting_type2",
+  "gold_target",
+  "diamond_target",
+  "column_break_42",
+  "product_size",
+  "qty",
+  "budget",
+  "delivery_date",
+  "section_break_41",
+  "gemstone_type1",
+  "column_break_43",
+  "gemstone_type2",
+  "column_break_45",
+  "gemstone_type3",
+  "column_break_47",
+  "gemstone_type4",
+  "column_break_49",
+  "gemstone_type5",
+  "column_break_51",
+  "gemstone_type6",
+  "column_break_53",
+  "gemstone_type7",
+  "column_break_55",
+  "gemstone_type8",
+  "section_break_53",
+  "remark",
+  "section_break_47",
+  "remarks",
+  "section_break_26",
+  "designer_assignment",
+  "section_break_28",
+  "rough_sketch_approval",
+  "section_break_30",
+  "final_sketch_approval",
+  "section_break_43",
+  "final_sketch_approval_cmo"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Link",
+   "label": "Company Name",
+   "options": "Company"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "sketch_order_form.order_date",
+   "fieldname": "order_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Order Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "sketch_order_form.delivery_days",
+   "fieldname": "delivery_days",
+   "fieldtype": "Data",
+   "label": "Delivery Days",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "sketch_order_form.delivery_date",
+   "fieldname": "delivery_date1",
+   "fieldtype": "Data",
+   "label": "Delivery Date"
+  },
+  {
+   "fetch_from": "sketch_order_form.estimated_duedate",
+   "fetch_if_empty": 1,
+   "fieldname": "estimated_duedate",
+   "fieldtype": "Date",
+   "label": "Estimated Due Date"
+  },
+  {
+   "fetch_from": "sketch_order_form.customer_code",
+   "fieldname": "customer_code",
+   "fieldtype": "Link",
+   "label": "Customer Code",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "sketch_order_form.po_number",
+   "fieldname": "po_number",
+   "fieldtype": "Data",
+   "label": "PO Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "sketch_order_form.order_type",
+   "fieldname": "order_type",
+   "fieldtype": "Select",
+   "label": "Order Type",
+   "options": "Sales\nStock Order",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "sketch_order_form.salesman_name",
+   "fieldname": "salesman_name",
+   "fieldtype": "Link",
+   "label": "Salesman Name",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "sketch_order_form.design_by",
+   "fieldname": "design_by",
+   "fieldtype": "Select",
+   "label": "Design by",
+   "options": "Customer Design\nConcept by Designer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sketch_order_form",
+   "fieldtype": "Link",
+   "label": "Sketch Order Form",
+   "options": "Sketch Order Form",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sketch_order_form_detail",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Sketch Order Form Detail",
+   "options": "Sketch Order Form Detail",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sketch_order_form_category",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Sketch Order Form Category",
+   "options": "Sketch Order Form Category",
+   "read_only": 1
+  },
+  {
+   "fieldname": "index",
+   "fieldtype": "Data",
+   "label": "Index",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sketch Order",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Table MultiSelect",
+   "hidden": 1,
+   "label": "Season",
+   "options": "Sketch Order Season",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "collection",
+   "fieldtype": "Table MultiSelect",
+   "hidden": 1,
+   "label": "Collection",
+   "options": "Sketch Order Collection"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_style",
+   "fieldtype": "Table MultiSelect",
+   "hidden": 1,
+   "label": "Design Style",
+   "options": "Sketch Order Design Style",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "sketch_order_form_detail.design_type",
+   "fieldname": "design_type",
+   "fieldtype": "Select",
+   "label": "Design Type",
+   "options": "New Creation\nModification\nIs Matching",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:((doc.design_type==\"Modification\"))",
+   "fetch_from": "sketch_order_form_detail.tag__design_id",
+   "fieldname": "tag__design_id",
+   "fieldtype": "Link",
+   "label": "Design ID",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.design_type==\"Modification\")",
+   "fetch_from": "sketch_order_form_detail.item_code",
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Code",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:((doc.design_type==\"Is Matching\"))",
+   "fetch_from": "sketch_order_form_detail.master_bom_no",
+   "fieldname": "master_bom_no",
+   "fieldtype": "Link",
+   "label": "Master BOM No",
+   "options": "BOM",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:((doc.design_type==\"Is Matching\"))",
+   "fetch_from": "sketch_order_form_detail.reference_designid",
+   "fieldname": "reference_designid",
+   "fieldtype": "Link",
+   "label": "Reference Design ID",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:((doc.design_type==\"Is Matching\"))",
+   "fetch_from": "sketch_order_form_detail.reference_tagid",
+   "fieldname": "reference_tagid",
+   "fieldtype": "Link",
+   "label": "Reference Tag ID",
+   "options": "Serial No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "sketch_order_form_detail.category",
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Attribute Value",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "sketch_order_form_detail.subcategory",
+   "fieldname": "subcategory",
+   "fieldtype": "Link",
+   "label": "Sub Category",
+   "options": "Attribute Value",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_34",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "design_image1",
+   "fieldtype": "Attach Image",
+   "label": "Design Image1"
+  },
+  {
+   "fieldname": "image_preview1",
+   "fieldtype": "Image",
+   "label": "Image Preview1",
+   "options": "design_image1"
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sketch_image",
+   "fieldtype": "Attach Image",
+   "label": "Sketch Image"
+  },
+  {
+   "fieldname": "sketch_image_preview",
+   "fieldtype": "Image",
+   "label": "Sketch Image Preview",
+   "options": "sketch_image"
+  },
+  {
+   "fieldname": "section_break_33",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "design_image2",
+   "fieldtype": "Attach Image",
+   "label": "Design Image2"
+  },
+  {
+   "fieldname": "image_preview2",
+   "fieldtype": "Image",
+   "label": "Image Preview2",
+   "options": "design_image2"
+  },
+  {
+   "fieldname": "column_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_image3",
+   "fieldtype": "Attach Image",
+   "label": "Design Image3"
+  },
+  {
+   "fieldname": "image_preview3",
+   "fieldtype": "Image",
+   "label": "Image Preview3",
+   "options": "design_image3"
+  },
+  {
+   "fieldname": "column_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_image4",
+   "fieldtype": "Attach Image",
+   "label": "Design Image4"
+  },
+  {
+   "fieldname": "image_preview4",
+   "fieldtype": "Image",
+   "label": "Image Preview4",
+   "options": "design_image4"
+  },
+  {
+   "fieldname": "column_48",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "sketch_order_form_detail.setting_type",
+   "fieldname": "setting_type",
+   "fieldtype": "Link",
+   "label": "Setting Type",
+   "options": "Attribute Value",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "sketch_order_form_detail.subsetting_type",
+   "fieldname": "subsetting_type1",
+   "fieldtype": "Link",
+   "label": "Sub Setting Type1",
+   "options": "Attribute Value",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "sketch_order_form_detail.sub_setting_type2",
+   "fieldname": "sub_setting_type2",
+   "fieldtype": "Link",
+   "label": "Sub Setting type2",
+   "options": "Attribute Value",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "sketch_order_form_detail.gold_target",
+   "fieldname": "gold_target",
+   "fieldtype": "Data",
+   "label": "Gold Target ",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "sketch_order_form_detail.diamond_target",
+   "fieldname": "diamond_target",
+   "fieldtype": "Data",
+   "label": "Diamond Target",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "sketch_order_form_detail.product_size",
+   "fieldname": "product_size",
+   "fieldtype": "Data",
+   "label": "Product Size",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "sketch_order_form_detail.qty",
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "No of Designs"
+  },
+  {
+   "fetch_from": "sketch_order_form_detail.budget",
+   "fieldname": "budget",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Budget"
+  },
+  {
+   "fetch_from": "sketch_order_form_detail.delivery_date",
+   "fieldname": "delivery_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Delivery Date"
+  },
+  {
+   "fieldname": "section_break_41",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "gemstone_type1",
+   "fieldtype": "Link",
+   "label": "Gemstone Type1",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "column_break_43",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gemstone_type2",
+   "fieldtype": "Link",
+   "label": "Gemstone Type2",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "column_break_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gemstone_type3",
+   "fieldtype": "Link",
+   "label": "Gemstone Type3",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "column_break_47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gemstone_type4",
+   "fieldtype": "Link",
+   "label": "Gemstone Type4",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "column_break_49",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "gemstone_type5",
+   "fieldtype": "Link",
+   "label": "Gemstone Type5",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "column_break_51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gemstone_type6",
+   "fieldtype": "Link",
+   "label": "Gemstone Type6",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "column_break_53",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gemstone_type7",
+   "fieldtype": "Link",
+   "label": "Gemstone Type7",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gemstone_type8",
+   "fieldtype": "Link",
+   "label": "Gemstone Type8",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "section_break_53",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_47",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "sketch_order_form_detail.remarks",
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Order Remarks"
+  },
+  {
+   "fieldname": "section_break_26",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "designer_assignment",
+   "fieldtype": "Table",
+   "label": "Designer Assignment",
+   "options": "Designer Assignment",
+   "permlevel": 1
+  },
+  {
+   "depends_on": "eval:(!in_list(['Unassigned','Assigned','On Hold','On Hold - Assigned'], doc.workflow_state))",
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rough_sketch_approval",
+   "fieldtype": "Table",
+   "label": "Rough Sketch Approval (HOD)",
+   "options": "Rough Sketch Approval",
+   "permlevel": 1
+  },
+  {
+   "depends_on": "eval:(!in_list(['Unassigned','Assigned','On Hold', 'On Hold - Assigned', 'Final Assigned', 'On Hold - Final Assigned'], doc.workflow_state))",
+   "fieldname": "section_break_30",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "final_sketch_approval",
+   "fieldtype": "Table",
+   "label": "Final Sketch Approval (HOD)",
+   "options": "Final Sketch Approval HOD",
+   "permlevel": 1
+  },
+  {
+   "depends_on": "eval:(!in_list(['Unassigned','Assigned','On Hold', 'On Hold - Assigned', 'Final Assigned', 'On Hold - Final Assigned','Rough Sketch Approval (HOD)','On Hold - Rough Sketch Approval'], doc.workflow_state))",
+   "fieldname": "section_break_43",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "final_sketch_approval_cmo",
+   "fieldtype": "Table",
+   "label": "Final Sketch Approval (CMO / CPO)",
+   "options": "Final Sketch Approval CMO",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text",
+   "label": "Remarks",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.design_by=='Concept by Designer'",
+   "fieldname": "section_break_56",
+   "fieldtype": "Section Break",
+   "read_only": 1
+  },
+  {
+   "fieldname": "basic_details",
+   "fieldtype": "Heading",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "market",
+   "fieldtype": "Select",
+   "label": "Market",
+   "options": "\nChennai\nBangalore\nHyderabad\nCoimbatore\nKerala",
+   "read_only": 1
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale",
+   "read_only": 1
+  },
+  {
+   "fieldname": "function",
+   "fieldtype": "Select",
+   "label": "Function",
+   "options": "\nBirthday\nFestive Gift\nAnniversary\nMothers Day\nWedding\nEngagement\nValentine\nWomens Day",
+   "read_only": 1
+  },
+  {
+   "fieldname": "concept_type",
+   "fieldtype": "Heading",
+   "label": "Concept Type"
+  },
+  {
+   "fieldname": "nature",
+   "fieldtype": "Data",
+   "label": "Nature",
+   "read_only": 1
+  },
+  {
+   "fieldname": "setting_style",
+   "fieldtype": "Data",
+   "label": "Setting Style",
+   "read_only": 1
+  },
+  {
+   "fieldname": "animal",
+   "fieldtype": "Data",
+   "label": "Animal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "god",
+   "fieldtype": "Data",
+   "label": "God",
+   "read_only": 1
+  },
+  {
+   "fieldname": "temple",
+   "fieldtype": "Data",
+   "label": "Temple",
+   "read_only": 1
+  },
+  {
+   "fieldname": "birds",
+   "fieldtype": "Data",
+   "label": "Birds",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shape",
+   "fieldtype": "Data",
+   "label": "Shape",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.design_by=='Concept by Designer'",
+   "fieldname": "section_break_71",
+   "fieldtype": "Section Break",
+   "read_only": 1
+  },
+  {
+   "fieldname": "creativity_type",
+   "fieldtype": "Heading",
+   "label": "Creativity Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "stepping",
+   "fieldtype": "Check",
+   "label": "Stepping",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "fusion",
+   "fieldtype": "Check",
+   "label": "Fusion",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "drops",
+   "fieldtype": "Check",
+   "label": "Drops",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "coin",
+   "fieldtype": "Check",
+   "label": "Coin",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_77",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "gold_wire",
+   "fieldtype": "Check",
+   "label": "Gold Wire (dat)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "gold_ball",
+   "fieldtype": "Check",
+   "label": "Gold Ball",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "flows",
+   "fieldtype": "Check",
+   "label": "Flows",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "nagas",
+   "fieldtype": "Check",
+   "label": "Nagas",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_82",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:((doc.design_type==\"Modification\"))",
+   "fieldname": "tag_id",
+   "fieldtype": "Link",
+   "label": "Master Serial No",
+   "options": "Serial No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "design_image",
+   "fieldtype": "Attach Image",
+   "label": "Design Image"
+  },
+  {
+   "fieldname": "image_preview",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "design_image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-24 11:37:27.929255",
+ "modified_by": "Administrator",
+ "module": "Gurukrupa Exports",
+ "name": "Sketch Order",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

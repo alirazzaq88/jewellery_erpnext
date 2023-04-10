@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:MCP-{#####}",
+ "creation": "2022-09-14 17:32:41.519466",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "setting_type",
+  "column_break_3",
+  "making_charge_type",
+  "metal_touch",
+  "metal_purity",
+  "section_break_7",
+  "subcategory"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "setting_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Setting Type",
+   "options": "Attribute Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "making_charge_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Making Charge Type",
+   "options": "Attribute Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "metal_touch",
+   "fieldtype": "Link",
+   "label": "Metal Touch",
+   "options": "Attribute Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "metal_purity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Metal Purity",
+   "options": "Attribute Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "subcategory",
+   "fieldtype": "Table",
+   "label": "Subcategory",
+   "options": "Making Charge Price Item Subcategory",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-15 13:34:03.003219",
+ "modified_by": "Administrator",
+ "module": "Gurukrupa Exports",
+ "name": "Making Charge Price",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-30 15:03:52.047493",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "batch_no",
+  "batch_operation_no",
+  "received_gross_wt"
+ ],
+ "fields": [
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Batch No",
+   "options": "Manufacturing Batch"
+  },
+  {
+   "fieldname": "batch_operation_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Batch Operation No",
+   "options": "Batch Operation"
+  },
+  {
+   "fieldname": "received_gross_wt",
+   "fieldtype": "Float",
+   "label": "Received Gross Wt"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-30 15:03:52.047493",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Main Slip Batch",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-04 12:11:17.920381",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "alloy",
+  "alloy_percentage",
+  "alloy_weight"
+ ],
+ "fields": [
+  {
+   "fieldname": "alloy",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Alloy",
+   "options": "Item"
+  },
+  {
+   "fieldname": "alloy_percentage",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Alloy Percentage"
+  },
+  {
+   "fieldname": "alloy_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Alloy Weight"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-08-04 12:13:47.988921",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Melting Lot Alloy Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

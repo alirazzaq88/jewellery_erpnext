@@ -1,0 +1,198 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-21 13:18:59.485602",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "diamond_type",
+  "stone_shape",
+  "diamond_cut",
+  "sieve_size_color",
+  "sub_setting_type",
+  "diamond_sieve_size",
+  "sieve_size_range",
+  "size_in_mm",
+  "is_customer_item",
+  "total_diamond_rate",
+  "column_break_8",
+  "size_type",
+  "pcs",
+  "weight_per_pcs",
+  "std_wt",
+  "quantity",
+  "diamond_grade",
+  "stock_uom",
+  "item_variant",
+  "quality",
+  "diamond_rate_for_specified_quantity"
+ ],
+ "fields": [
+  {
+   "default": "D",
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "default": "Real",
+   "fieldname": "diamond_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": " Type",
+   "options": "Attribute Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stone_shape",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Stone Shape",
+   "options": "Attribute Value",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "stone_shape.diamond_cut",
+   "fieldname": "diamond_cut",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Diamond Cut",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "diamond_sieve_size.sieve_size_color",
+   "fieldname": "sieve_size_color",
+   "fieldtype": "Color",
+   "in_list_view": 1,
+   "label": "Color",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sub_setting_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sub Setting Type",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "diamond_sieve_size",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": " Sieve Size",
+   "options": "Attribute Value",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_customer_item",
+   "fieldtype": "Check",
+   "label": "Is Customer Item"
+  },
+  {
+   "fieldname": "total_diamond_rate",
+   "fieldtype": "Currency",
+   "label": "Diamond Rate"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "diamond_sieve_size.size_type",
+   "fieldname": "size_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Size Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pcs",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Pcs",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "diamond_sieve_size.weight_in_cts",
+   "fieldname": "weight_per_pcs",
+   "fieldtype": "Float",
+   "label": "Weight per piece",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight in cts",
+   "reqd": 1
+  },
+  {
+   "fieldname": "diamond_grade",
+   "fieldtype": "Link",
+   "label": "Diamond Grade",
+   "options": "Attribute Value"
+  },
+  {
+   "default": "cts",
+   "fieldname": "stock_uom",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Stock UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_variant",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Variant"
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Link",
+   "label": "Quality",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "diamond_rate_for_specified_quantity",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fetch_from": "diamond_sieve_size.diameter",
+   "fieldname": "size_in_mm",
+   "fieldtype": "Float",
+   "label": "Size In MM"
+  },
+  {
+   "fetch_from": "diamond_sieve_size.sieve_size_range",
+   "fieldname": "sieve_size_range",
+   "fieldtype": "Link",
+   "label": "Sieve Size Range",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "std_wt",
+   "fieldtype": "Float",
+   "label": "Standard Weight",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-21 14:48:09.923653",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "BOM Diamond Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

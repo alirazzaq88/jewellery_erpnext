@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-10-06 17:35:26.217540",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "designer",
+  "designer_name",
+  "sketch_image",
+  "sketch_image_preview",
+  "column_break_5",
+  "category",
+  "sub_category",
+  "setting_type",
+  "gold_wt_approx",
+  "diamond_wt_approx",
+  "design_status",
+  "design_status_cpo"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "no_copy": 1,
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "designer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Designer",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "designer.employee_name",
+   "fieldname": "designer_name",
+   "fieldtype": "Data",
+   "label": "Designer Name"
+  },
+  {
+   "fieldname": "sketch_image",
+   "fieldtype": "Attach Image",
+   "label": "Sketch Image"
+  },
+  {
+   "fieldname": "sketch_image_preview",
+   "fieldtype": "Image",
+   "label": "Sketch Image Preview",
+   "options": "sketch_image"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "Attribute Value"
+  },
+  {
+   "columns": 1,
+   "fieldname": "sub_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sub Category",
+   "options": "Attribute Value"
+  },
+  {
+   "columns": 1,
+   "fieldname": "setting_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Setting Type",
+   "options": "Attribute Value"
+  },
+  {
+   "columns": 1,
+   "fieldname": "gold_wt_approx",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Gold wt (Approx)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "diamond_wt_approx",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Diamond wt (Approx)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "design_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status (CMO)",
+   "options": "\nApproved\nReject",
+   "permlevel": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "design_status_cpo",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status (CPO)",
+   "options": "\nApproved\nReject",
+   "permlevel": 2
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-22 15:16:20.357717",
+ "modified_by": "Administrator",
+ "module": "Gurukrupa Exports",
+ "name": "Final Sketch Approval CMO",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

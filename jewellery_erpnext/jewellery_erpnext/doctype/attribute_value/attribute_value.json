@@ -1,0 +1,367 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:attribute_value",
+ "creation": "2022-04-13 15:38:18.741602",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attribute_value",
+  "is_diamond_sieve_size",
+  "is_category",
+  "is_diamond_grade",
+  "is_finding_type",
+  "column_break_7",
+  "is_stone_shape",
+  "is_collection",
+  "is_finding_size",
+  "column_break_11",
+  "is_metal_purity",
+  "is_diamond_sieve_size_range",
+  "is_sub_setting_type",
+  "is_subcategory",
+  "parent_attribute_value",
+  "section_break_24",
+  "sieve_size_name",
+  "collection_details",
+  "collection_code",
+  "stone_shape_details",
+  "shape_code",
+  "diamond_cut",
+  "section_break_3",
+  "metal_purity_code",
+  "purity_percentage",
+  "column_break_0pof9",
+  "metal_touch",
+  "category_details",
+  "category_code",
+  "cad_finish_ratio",
+  "section_break_48",
+  "item_attributes",
+  "section_break_50",
+  "sieve_size_range",
+  "weight_in_cts",
+  "diameter",
+  "sieve_size_color",
+  "size_type",
+  "diamond_shape",
+  "finding_size",
+  "size_in_inch",
+  "diamond_grade_details",
+  "diamond_quality",
+  "finding_type_details",
+  "finding_dimension",
+  "finding_size_and_weights",
+  "subcategory",
+  "section_break_15"
+ ],
+ "fields": [
+  {
+   "fieldname": "attribute_value",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Attribute Value",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_diamond_sieve_size",
+   "fieldtype": "Check",
+   "label": "Is Diamond Sieve Size"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_category",
+   "fieldtype": "Check",
+   "label": "Is Category"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_diamond_grade",
+   "fieldtype": "Check",
+   "label": "Is Diamond Grade"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_finding_type",
+   "fieldtype": "Check",
+   "label": "Is Finding Type"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_stone_shape",
+   "fieldtype": "Check",
+   "label": "Is Stone Shape"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_collection",
+   "fieldtype": "Check",
+   "label": "Is Collection"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_finding_size",
+   "fieldtype": "Check",
+   "label": "Is Finding Size"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_metal_purity",
+   "fieldtype": "Check",
+   "label": "Is Metal Purity"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_diamond_sieve_size_range",
+   "fieldtype": "Check",
+   "label": "Is Diamond Sieve Size Range"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_sub_setting_type",
+   "fieldtype": "Check",
+   "label": "Is Sub Setting Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_subcategory",
+   "fieldtype": "Check",
+   "label": "Is Subcategory"
+  },
+  {
+   "depends_on": "eval:(doc.is_subcategory==1 || doc.is_sub_setting_type==1)",
+   "fieldname": "parent_attribute_value",
+   "fieldtype": "Link",
+   "label": "Parent Attribute Value",
+   "options": "Attribute Value"
+  },
+  {
+   "depends_on": "eval:doc.is_diamond_sieve_size_range==1",
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break",
+   "label": "Sieve Size Range Details"
+  },
+  {
+   "fieldname": "sieve_size_name",
+   "fieldtype": "Data",
+   "label": "Sieve Size Name",
+   "translatable": 1
+  },
+  {
+   "depends_on": "eval:doc.is_collection==1",
+   "fieldname": "collection_details",
+   "fieldtype": "Section Break",
+   "label": "Collection Details"
+  },
+  {
+   "fieldname": "collection_code",
+   "fieldtype": "Data",
+   "label": "Collection Code",
+   "translatable": 1
+  },
+  {
+   "depends_on": "eval:doc.is_stone_shape==1",
+   "fieldname": "stone_shape_details",
+   "fieldtype": "Section Break",
+   "label": "Stone Shape Details"
+  },
+  {
+   "fieldname": "shape_code",
+   "fieldtype": "Data",
+   "label": "Shape Code",
+   "translatable": 1
+  },
+  {
+   "fieldname": "diamond_cut",
+   "fieldtype": "Data",
+   "label": "Diamond Cut",
+   "translatable": 1
+  },
+  {
+   "depends_on": "eval:doc.is_metal_purity==1",
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break",
+   "label": "Metal Purity Details"
+  },
+  {
+   "fieldname": "metal_purity_code",
+   "fieldtype": "Data",
+   "label": "Metal Purity Code",
+   "translatable": 1
+  },
+  {
+   "fieldname": "purity_percentage",
+   "fieldtype": "Float",
+   "label": "Purity Percentage"
+  },
+  {
+   "depends_on": "eval:doc.is_category==1",
+   "fieldname": "category_details",
+   "fieldtype": "Section Break",
+   "label": "Category Details"
+  },
+  {
+   "fieldname": "category_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Category Code",
+   "translatable": 1
+  },
+  {
+   "fieldname": "cad_finish_ratio",
+   "fieldtype": "Data",
+   "label": "CAD to Finish Ratio",
+   "translatable": 1
+  },
+  {
+   "depends_on": "eval:doc.is_subcategory==1",
+   "fieldname": "section_break_48",
+   "fieldtype": "Section Break",
+   "label": "Subcategory Details"
+  },
+  {
+   "fieldname": "item_attributes",
+   "fieldtype": "Table",
+   "label": "Item Attributes",
+   "options": "Attribute Value Item Attribute Detail"
+  },
+  {
+   "depends_on": "eval:doc.is_diamond_sieve_size==1",
+   "fieldname": "section_break_50",
+   "fieldtype": "Section Break",
+   "label": "Seive Size Details"
+  },
+  {
+   "fieldname": "sieve_size_range",
+   "fieldtype": "Link",
+   "label": "Sieve Size Range",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "weight_in_cts",
+   "fieldtype": "Float",
+   "label": "Weight In Carat"
+  },
+  {
+   "fieldname": "diameter",
+   "fieldtype": "Float",
+   "label": "Diameter (in MM)"
+  },
+  {
+   "fieldname": "sieve_size_color",
+   "fieldtype": "Color",
+   "label": "Sieve Size Color"
+  },
+  {
+   "fieldname": "size_type",
+   "fieldtype": "Select",
+   "label": "Size Type",
+   "options": "\nHigh\nMedium\nLow",
+   "translatable": 1
+  },
+  {
+   "fieldname": "diamond_shape",
+   "fieldtype": "Link",
+   "label": "Diamond Shape",
+   "options": "Attribute Value"
+  },
+  {
+   "depends_on": "eval:doc.is_finding_size==1",
+   "fieldname": "finding_size",
+   "fieldtype": "Section Break",
+   "label": "Finding Size"
+  },
+  {
+   "fieldname": "size_in_inch",
+   "fieldtype": "Float",
+   "label": "Size in Inch"
+  },
+  {
+   "depends_on": "eval:doc.is_diamond_grade==1",
+   "fieldname": "diamond_grade_details",
+   "fieldtype": "Section Break",
+   "label": "Diamond Grade Details"
+  },
+  {
+   "fieldname": "diamond_quality",
+   "fieldtype": "Link",
+   "label": "Diamond Quality",
+   "options": "Attribute Value"
+  },
+  {
+   "depends_on": "eval:doc.is_finding_type==1",
+   "fieldname": "finding_type_details",
+   "fieldtype": "Section Break",
+   "label": "Finding Type Details"
+  },
+  {
+   "fieldname": "finding_dimension",
+   "fieldtype": "Select",
+   "label": "Finding Dimension",
+   "options": "mm\nLength x Width\nThickness x Width\nInch",
+   "translatable": 1
+  },
+  {
+   "fieldname": "finding_size_and_weights",
+   "fieldtype": "Table",
+   "label": "Finding Size and Weight",
+   "options": "Attribute Value Finding Type Weight"
+  },
+  {
+   "fieldname": "subcategory",
+   "fieldtype": "Table",
+   "label": "Subcategory",
+   "options": "Attribute Value Finding Type Subcategory"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_0pof9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "metal_touch",
+   "fieldtype": "Link",
+   "label": "Metal Touch",
+   "options": "Attribute Value"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-22 12:07:36.488239",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Attribute Value",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

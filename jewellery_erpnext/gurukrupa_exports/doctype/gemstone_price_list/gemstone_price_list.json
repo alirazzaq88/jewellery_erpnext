@@ -1,0 +1,163 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2022-07-25 19:09:11.229961",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "price_list",
+  "customer",
+  "gemstone_code",
+  "gemstone_type",
+  "cut_or_cab",
+  "stone_shape",
+  "gemstone_quality",
+  "gemstone_size",
+  "column_break_8",
+  "price_list_type",
+  "from_weight",
+  "to_weight",
+  "item",
+  "bom",
+  "rate",
+  "handling_rate",
+  "currency",
+  "effective_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "price_list",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Price List",
+   "options": "Price List"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "gemstone_code",
+   "fieldtype": "Data",
+   "label": "Stone Code"
+  },
+  {
+   "fieldname": "gemstone_type",
+   "fieldtype": "Link",
+   "label": "Stone Type",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "cut_or_cab",
+   "fieldtype": "Link",
+   "label": "Cut or Cab",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "stone_shape",
+   "fieldtype": "Link",
+   "label": "Stone Shape",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "gemstone_quality",
+   "fieldtype": "Link",
+   "label": "Stone Quality",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "gemstone_size",
+   "fieldtype": "Link",
+   "label": "Stone Size",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "price_list_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Price List Type",
+   "options": "Weight (in cts)\nFixed"
+  },
+  {
+   "depends_on": "eval:doc.price_list_type=='Weight (in cts)'",
+   "fieldname": "from_weight",
+   "fieldtype": "Float",
+   "label": "From Weight (in cts)"
+  },
+  {
+   "depends_on": "eval:doc.price_list_type=='Weight (in cts)'",
+   "fieldname": "to_weight",
+   "fieldtype": "Float",
+   "label": "To Weight (in cts)"
+  },
+  {
+   "depends_on": "eval:doc.price_list_type=='Fixed'",
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "depends_on": "eval:doc.price_list_type=='Fixed'",
+   "fieldname": "bom",
+   "fieldtype": "Link",
+   "label": "BOM",
+   "options": "BOM"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rate"
+  },
+  {
+   "fieldname": "handling_rate",
+   "fieldtype": "Float",
+   "label": "Gemstone Handling Rate"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "effective_from",
+   "fieldtype": "Date",
+   "label": "Effective From"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-15 22:57:06.769126",
+ "modified_by": "Administrator",
+ "module": "Gurukrupa Exports",
+ "name": "Gemstone Price List",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

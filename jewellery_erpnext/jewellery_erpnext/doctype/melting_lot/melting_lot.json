@@ -1,0 +1,306 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-04 11:34:05.812743",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details_tab",
+  "product_purity",
+  "accessories_purity",
+  "tone",
+  "melting_type",
+  "parent_melting_lot",
+  "column_break_7",
+  "deign_order",
+  "customer_name",
+  "line",
+  "concept",
+  "product_category",
+  "column_break_10",
+  "owner",
+  "design",
+  "machine_size",
+  "cutting_process",
+  "laser_powder_type",
+  "metal_details_section",
+  "metal_detail",
+  "section_break_6",
+  "column_break_6",
+  "total_fine_weight",
+  "total_alloy_weight",
+  "column_break_11",
+  "gross_weight",
+  "additional_alloy_weight",
+  "melting_lot_alloy_details_section",
+  "melting_lot_alloy_details",
+  "pending_order_tab",
+  "melting_lot_design_order_detail_section",
+  "order_details",
+  "melting_lot_design_order_bunch_detail_section",
+  "order_bunch_details",
+  "amended_from",
+  "operation_card"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_purity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Product Purity",
+   "options": "Purity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tone",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tone",
+   "options": "Tone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "metal_details_section",
+   "fieldtype": "Tab Break",
+   "label": "Metal Details"
+  },
+  {
+   "fieldname": "metal_detail",
+   "fieldtype": "Table",
+   "label": "Melting Lot Detail",
+   "options": "Metal Details"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_fine_weight",
+   "fieldtype": "Float",
+   "label": "Total Fine Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_alloy_weight",
+   "fieldtype": "Float",
+   "label": "Total Alloy Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gross_weight",
+   "fieldtype": "Float",
+   "label": "Gross Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "additional_alloy_weight",
+   "fieldtype": "Float",
+   "label": "Additional Alloy Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "melting_lot_alloy_details_section",
+   "fieldtype": "Tab Break",
+   "label": "Melting Lot Alloy Details"
+  },
+  {
+   "fieldname": "melting_lot_alloy_details",
+   "fieldtype": "Table",
+   "label": "Melting Lot Alloy Details",
+   "options": "Melting Lot Alloy Details",
+   "read_only": 1
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "melting_type",
+   "fieldtype": "Link",
+   "label": "Melting Type",
+   "options": "Melting Type"
+  },
+  {
+   "fieldname": "line",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Line",
+   "options": "Line"
+  },
+  {
+   "fieldname": "concept",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Concept",
+   "options": "Concept"
+  },
+  {
+   "fieldname": "design",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Design",
+   "options": "Design"
+  },
+  {
+   "fieldname": "product_category",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Product Category",
+   "options": "Product Category"
+  },
+  {
+   "fieldname": "machine_size",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Machine Size",
+   "options": "Machine Size"
+  },
+  {
+   "fieldname": "cutting_process",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Cutting Process",
+   "options": "Cutting Process"
+  },
+  {
+   "fieldname": "laser_powder_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Laser Powder Type",
+   "options": "Laser Powder Type"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "frappe.session.user",
+   "fieldname": "owner",
+   "fieldtype": "Link",
+   "label": "Owner",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "deign_order",
+   "fieldtype": "Link",
+   "label": "Design Order",
+   "options": "Design Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pending_order_tab",
+   "fieldtype": "Tab Break",
+   "label": "Pending Order"
+  },
+  {
+   "fieldname": "melting_lot_design_order_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Melting Lot Design Order Detail"
+  },
+  {
+   "fieldname": "melting_lot_design_order_bunch_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Melting Lot Design Order Bunch Detail"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Melting Lot",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "operation_card",
+   "fieldtype": "Data",
+   "label": "Operation Card",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "parent_melting_lot",
+   "fieldtype": "Link",
+   "label": "Parent Melting Lot",
+   "options": "Parent Melting Lot"
+  },
+  {
+   "fieldname": "order_details",
+   "fieldtype": "Table",
+   "label": "Order Details",
+   "options": "Melting Lot Design Order Detail"
+  },
+  {
+   "fieldname": "order_bunch_details",
+   "fieldtype": "Table",
+   "label": "Order Bunch Details",
+   "options": "Melting Lot Design Order Bunch Detail"
+  },
+  {
+   "fieldname": "accessories_purity",
+   "fieldtype": "Link",
+   "label": "Accessories Purity",
+   "options": "Purity"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-01-11 17:49:14.569705",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Melting Lot",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

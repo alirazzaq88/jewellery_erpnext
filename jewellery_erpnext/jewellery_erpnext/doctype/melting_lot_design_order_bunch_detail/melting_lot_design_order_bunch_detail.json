@@ -1,0 +1,178 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-11-11 02:57:14.300067",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "column_break_3",
+  "weight",
+  "length",
+  "section_break_7",
+  "production_length",
+  "ready_length",
+  "balance_production_length",
+  "balance_ready_length",
+  "column_break_12",
+  "production_weight",
+  "ready_weight",
+  "balance_production_weight",
+  "balance_ready_weight",
+  "column_break_5",
+  "remaining_weight",
+  "remaining_length",
+  "description",
+  "reference_type",
+  "reference_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Weight"
+  },
+  {
+   "fieldname": "length",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Length"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "production_length",
+   "fieldtype": "Float",
+   "label": "Production Length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ready_length",
+   "fieldtype": "Float",
+   "label": "Ready Length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "balance_production_length",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Balance Production Length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "balance_ready_length",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Balance Ready Length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "production_weight",
+   "fieldtype": "Float",
+   "label": "Production Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ready_weight",
+   "fieldtype": "Float",
+   "label": "Ready Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "balance_production_weight",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Balance Production Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "balance_ready_weight",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Balance Ready Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remaining_weight",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Remaining Order Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remaining_length",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Remaining Order Length",
+   "read_only": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "reference_type",
+   "fieldtype": "Link",
+   "label": "Reference Type",
+   "options": "DocType",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Link",
+   "label": "Reference Name",
+   "options": "Design Order",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-11 16:13:57.410702",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Melting Lot Design Order Bunch Detail",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

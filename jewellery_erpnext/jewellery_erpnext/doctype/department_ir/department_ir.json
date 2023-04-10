@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-30 11:46:48.688145",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date__time",
+  "amended_from",
+  "type",
+  "current_department",
+  "next_department",
+  "show_batch_from_last_operation",
+  "get_batches",
+  "department_ir_batches"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date__time",
+   "fieldtype": "Datetime",
+   "label": "Date / Time"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Department IR",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Issue\nReceive"
+  },
+  {
+   "depends_on": "eval: doc.type == 'Issue'",
+   "fieldname": "current_department",
+   "fieldtype": "Link",
+   "label": "Current Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "next_department",
+   "fieldtype": "Link",
+   "label": "Next Department",
+   "options": "Department"
+  },
+  {
+   "default": "1",
+   "fieldname": "show_batch_from_last_operation",
+   "fieldtype": "Check",
+   "label": "Show Batch from Last Operation"
+  },
+  {
+   "fieldname": "get_batches",
+   "fieldtype": "Button",
+   "label": "Get Batches"
+  },
+  {
+   "fieldname": "department_ir_batches",
+   "fieldtype": "Table",
+   "label": "Department IR Batches",
+   "options": "Department IR Batches"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-30 11:59:43.107756",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Department IR",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

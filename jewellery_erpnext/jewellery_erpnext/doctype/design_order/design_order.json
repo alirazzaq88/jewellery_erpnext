@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:DO{###}",
+ "creation": "2022-11-09 11:29:32.914199",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "purity",
+  "column_break_3",
+  "date",
+  "description",
+  "design_order_detail_section",
+  "design_order_details",
+  "design_order_bunch_detail_section",
+  "design_order_bunch_details",
+  "amended_from",
+  "status",
+  "workflow_state"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "purity",
+   "fieldtype": "Link",
+   "label": "Purity",
+   "options": "Purity"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "design_order_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Design Order Detail"
+  },
+  {
+   "fieldname": "design_order_details",
+   "fieldtype": "Table",
+   "options": "Design Order Detail"
+  },
+  {
+   "fieldname": "design_order_bunch_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Design Order Bunch Detail"
+  },
+  {
+   "fieldname": "design_order_bunch_details",
+   "fieldtype": "Table",
+   "options": "Design Order Bunch Detail"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Design Order",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "\nDraft\nApproved\nProcessed\nPartially Processed\nCanceled\nCompleted"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Workflow State"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-11-11 02:19:14.022354",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Design Order",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

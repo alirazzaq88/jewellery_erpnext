@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-08 12:05:15.729055",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-08 12:11:52.423987",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Jewellery System Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

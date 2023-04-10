@@ -1,0 +1,174 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-21 13:28:02.947486",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "finding_category",
+  "finding_type",
+  "finding_size",
+  "metal_touch",
+  "metal_purity",
+  "purity_percentage",
+  "is_customer_item",
+  "rate",
+  "amount",
+  "making_rate",
+  "making_amount",
+  "column_break_6",
+  "metal_colour",
+  "qty",
+  "quantity",
+  "stock_uom",
+  "item_variant",
+  "wastage_rate",
+  "wastage_amount"
+ ],
+ "fields": [
+  {
+   "default": "F",
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "finding_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": " Category",
+   "options": "Attribute Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "finding_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": " Type",
+   "options": "Attribute Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "finding_size",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": " Size",
+   "options": "Attribute Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "metal_purity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Metal Purity",
+   "options": "Attribute Value",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "metal_purity.purity_percentage",
+   "fieldname": "purity_percentage",
+   "fieldtype": "Float",
+   "label": "Purity Percentage"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_customer_item",
+   "fieldtype": "Check",
+   "label": "Is Customer Item"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "making_rate",
+   "fieldtype": "Currency",
+   "label": "Making Rate"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "making_amount",
+   "fieldtype": "Currency",
+   "label": "Making Amount"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "metal_colour",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Metal Colour",
+   "options": "Attribute Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Wt (gms)",
+   "reqd": 1
+  },
+  {
+   "default": "gms",
+   "fieldname": "stock_uom",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Stock UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_variant",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Item Variant"
+  },
+  {
+   "fieldname": "metal_touch",
+   "fieldtype": "Link",
+   "label": "Metal Touch",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "wastage_rate",
+   "fieldtype": "Currency",
+   "label": "Wastage Rate"
+  },
+  {
+   "fieldname": "wastage_amount",
+   "fieldtype": "Currency",
+   "label": "Wastage Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-15 13:17:20.122191",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "BOM Finding Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

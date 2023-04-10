@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-01-27 12:01:38.445943",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "metal_purity",
+  "metal_weight",
+  "pure_metal_weight"
+ ],
+ "fields": [
+  {
+   "fieldname": "metal_purity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Metal Purity"
+  },
+  {
+   "fieldname": "metal_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Metal Weight"
+  },
+  {
+   "fieldname": "pure_metal_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Pure Metal Weight"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-27 13:12:31.836304",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Metal Loss Purity",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

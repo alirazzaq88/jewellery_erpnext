@@ -1,0 +1,33 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-10-06 11:34:12.981094",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "GURUKRUPA EXPORTS",
+ "modified": "2022-10-06 11:34:21.467192",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Work Order Status",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Job Card",
+ "report_name": "Work Order Status",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Manufacturing User"
+  },
+  {
+   "role": "Manufacturing Manager"
+  }
+ ]
+}

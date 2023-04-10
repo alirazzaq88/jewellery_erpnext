@@ -1,0 +1,236 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "C-J-.####",
+ "creation": "2022-08-25 12:38:29.116325",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "operation",
+  "company",
+  "column_break_2",
+  "production_plan",
+  "amended_from",
+  "section_break_4",
+  "get_job_cards",
+  "details",
+  "timing_detail_section",
+  "time_logs",
+  "job_card_in_weight_section",
+  "internal_in_weight_html",
+  "column_break_11",
+  "external_in_weight_html",
+  "section_break_13",
+  "add_out_weight",
+  "out_weights_html",
+  "section_break_16",
+  "total_html",
+  "section_break_20",
+  "total_in_gross_weight",
+  "total_out_gross_weight",
+  "tree_wax_weight",
+  "column_break_23",
+  "total_metal_loss",
+  "total_diamond_loss",
+  "total_gemstone_loss",
+  "section_break_27",
+  "scrap_items"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Combine Job Card",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Table",
+   "label": "Details",
+   "options": "Combine Job Card Detail",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "operation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Operation",
+   "options": "Operation"
+  },
+  {
+   "fieldname": "production_plan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Production Plan",
+   "options": "Production Plan"
+  },
+  {
+   "fieldname": "get_job_cards",
+   "fieldtype": "Button",
+   "label": "Get Job Cards"
+  },
+  {
+   "fieldname": "job_card_in_weight_section",
+   "fieldtype": "Section Break",
+   "label": "Job card In weight"
+  },
+  {
+   "fieldname": "internal_in_weight_html",
+   "fieldtype": "Text",
+   "label": "Internal In Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "external_in_weight_html",
+   "fieldtype": "Text",
+   "label": "External In Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "add_out_weight",
+   "fieldtype": "Button",
+   "label": "Add Out Weight"
+  },
+  {
+   "fieldname": "out_weights_html",
+   "fieldtype": "Text",
+   "label": "Out Weights",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_html",
+   "fieldtype": "Text",
+   "label": "Total HTML",
+   "read_only": 1
+  },
+  {
+   "fieldname": "timing_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Timing Detail"
+  },
+  {
+   "fieldname": "time_logs",
+   "fieldtype": "Table",
+   "label": "Time Logs",
+   "options": "Job Card Time Log"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "scrap_items",
+   "fieldtype": "Table",
+   "label": "Scrap Items",
+   "options": "Job Card Scrap Item"
+  },
+  {
+   "default": "0.000",
+   "fieldname": "total_in_gross_weight",
+   "fieldtype": "Float",
+   "label": "Total In Gross Weight",
+   "precision": "3"
+  },
+  {
+   "default": "0.000",
+   "fieldname": "total_out_gross_weight",
+   "fieldtype": "Float",
+   "label": "Total Out Gross Weight",
+   "precision": "3"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "total_metal_loss",
+   "fieldtype": "Float",
+   "label": "Total Metal Loss",
+   "precision": "3"
+  },
+  {
+   "default": "0.000",
+   "fieldname": "total_diamond_loss",
+   "fieldtype": "Float",
+   "label": "Total Diamond Loss",
+   "precision": "3"
+  },
+  {
+   "default": "0.000",
+   "fieldname": "total_gemstone_loss",
+   "fieldtype": "Float",
+   "label": "Total Gemstone Loss",
+   "precision": "3"
+  },
+  {
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.operation==\"Tree Making\"",
+   "fieldname": "tree_wax_weight",
+   "fieldtype": "Float",
+   "label": "Tree Wax Weight",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-01-12 16:50:17.259352",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Combine Job Card",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

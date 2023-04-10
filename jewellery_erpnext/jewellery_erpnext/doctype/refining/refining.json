@@ -1,0 +1,189 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{dustname}-{MM}-{YY}-{#####}",
+ "creation": "2023-01-19 15:50:03.704613",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "multi_operation",
+  "operation",
+  "employee",
+  "dustname",
+  "date_from",
+  "date_to",
+  "material_receipt",
+  "column_break_5",
+  "dust_weight",
+  "after_burn_weight",
+  "powder_weight",
+  "refining_gold_weight",
+  "purity",
+  "fine_weight",
+  "open_item",
+  "section_break_11",
+  "job_card",
+  "section_break_13",
+  "refining_operation_details",
+  "data_15",
+  "refining_tag_no_detail",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "dustname",
+   "fieldtype": "Link",
+   "label": "Dust Type",
+   "options": "Dust Type"
+  },
+  {
+   "fieldname": "date_from",
+   "fieldtype": "Date",
+   "label": "Date From"
+  },
+  {
+   "fieldname": "date_to",
+   "fieldtype": "Date",
+   "label": "Date To"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dust_weight",
+   "fieldtype": "Float",
+   "label": "Dust Weight"
+  },
+  {
+   "fieldname": "after_burn_weight",
+   "fieldtype": "Float",
+   "label": "After Burn Weight"
+  },
+  {
+   "fieldname": "powder_weight",
+   "fieldtype": "Float",
+   "label": "Powder Weight"
+  },
+  {
+   "fieldname": "fine_weight",
+   "fieldtype": "Float",
+   "label": "Fine Weight"
+  },
+  {
+   "default": "0",
+   "fieldname": "open_item",
+   "fieldtype": "Check",
+   "label": "Open Item"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "job_card",
+   "fieldtype": "Table",
+   "label": "Refining Job Card Details",
+   "options": "Refining Job Card"
+  },
+  {
+   "depends_on": "eval:doc.multi_operation",
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "refining_operation_details",
+   "fieldtype": "Table",
+   "in_preview": 1,
+   "label": "Refining Operation Details",
+   "options": "Refining Operation Detail"
+  },
+  {
+   "fieldname": "data_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "refining_tag_no_detail",
+   "fieldtype": "Table",
+   "label": "Refining Tag No. Detail",
+   "options": "Refining Tag Number"
+  },
+  {
+   "default": "0",
+   "fieldname": "multi_operation",
+   "fieldtype": "Check",
+   "label": "For Multiple Operations"
+  },
+  {
+   "depends_on": "eval:!doc.multi_operation",
+   "fieldname": "operation",
+   "fieldtype": "Link",
+   "label": "Operation",
+   "mandatory_depends_on": "eval:!doc.multi_operation",
+   "options": "Operation"
+  },
+  {
+   "fieldname": "material_receipt",
+   "fieldtype": "Link",
+   "label": "Material Receipt",
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:!doc.multi_operation",
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "refining_gold_weight",
+   "fieldtype": "Float",
+   "label": "Refining Gold Weight"
+  },
+  {
+   "fieldname": "purity",
+   "fieldtype": "Float",
+   "label": "Purity"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Refining",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-02-16 14:54:02.552066",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Refining",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

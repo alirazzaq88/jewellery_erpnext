@@ -1,0 +1,271 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-08 12:07:08.159749",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "update_uom_conversion_in_variant",
+  "defualt_item",
+  "system_item",
+  "gold_gst_rate",
+  "warehouses_section",
+  "source_warehouse",
+  "work_in_progress",
+  "column_break_7",
+  "target_warehouse",
+  "scrap_warehouse",
+  "operation_details_section",
+  "metal_operation",
+  "finding_operation",
+  "column_break_13",
+  "other_operation",
+  "diamond_operation",
+  "gemstone_operation",
+  "warehouse_details_section",
+  "metal_warehouse",
+  "diamond_warehouse",
+  "column_break_20",
+  "gemstone_warehouse",
+  "finding_warehouse",
+  "other_warehouse",
+  "refining_details_section",
+  "refined_metal",
+  "column_break_27",
+  "refining_warehouse",
+  "item_details_section",
+  "cad_to_rpt",
+  "rpt_to_wax",
+  "column_break_30",
+  "wax_to_gold_10",
+  "wax_to_gold_14",
+  "wax_to_gold_18",
+  "wax_to_gold_22",
+  "wax_to_silver"
+ ],
+ "fields": [
+  {
+   "fieldname": "system_item",
+   "fieldtype": "Table",
+   "label": "System Item",
+   "options": "Jewellery System Item"
+  },
+  {
+   "fieldname": "update_uom_conversion_in_variant",
+   "fieldtype": "Button",
+   "label": "Update UOM Conversion in variant",
+   "options": "update_uom_conversion_in_variant"
+  },
+  {
+   "fieldname": "gold_gst_rate",
+   "fieldtype": "Data",
+   "label": "Gold GST Rate"
+  },
+  {
+   "fieldname": "warehouses_section",
+   "fieldtype": "Section Break",
+   "label": "Warehouses"
+  },
+  {
+   "fieldname": "source_warehouse",
+   "fieldtype": "Link",
+   "label": "Source Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "work_in_progress",
+   "fieldtype": "Link",
+   "label": "Work In Progress",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_warehouse",
+   "fieldtype": "Link",
+   "label": "Target Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "scrap_warehouse",
+   "fieldtype": "Link",
+   "label": "Scrap Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "operation_details_section",
+   "fieldtype": "Section Break",
+   "label": "Operation Details"
+  },
+  {
+   "fieldname": "metal_operation",
+   "fieldtype": "Link",
+   "label": "Metal Operation",
+   "options": "Operation"
+  },
+  {
+   "fieldname": "finding_operation",
+   "fieldtype": "Link",
+   "label": "Finding Operation",
+   "options": "Operation"
+  },
+  {
+   "fieldname": "other_operation",
+   "fieldtype": "Link",
+   "label": "Other Operation",
+   "options": "Operation"
+  },
+  {
+   "fieldname": "diamond_operation",
+   "fieldtype": "Link",
+   "label": "Diamond Operation",
+   "options": "Operation"
+  },
+  {
+   "fieldname": "gemstone_operation",
+   "fieldtype": "Link",
+   "label": "Gemstone Operation",
+   "options": "Operation"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "warehouse_details_section",
+   "fieldtype": "Section Break",
+   "label": "Warehouse Details"
+  },
+  {
+   "fieldname": "metal_warehouse",
+   "fieldtype": "Link",
+   "label": "Metal Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "diamond_warehouse",
+   "fieldtype": "Link",
+   "label": "Diamond Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gemstone_warehouse",
+   "fieldtype": "Link",
+   "label": "Gemstone Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "finding_warehouse",
+   "fieldtype": "Link",
+   "label": "Finding Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "other_warehouse",
+   "fieldtype": "Link",
+   "label": "Other Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "defualt_item",
+   "fieldtype": "Link",
+   "label": "Default Item For Template And Quotation BOM",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_details_section",
+   "fieldtype": "Section Break",
+   "label": "Item Details"
+  },
+  {
+   "fieldname": "rpt_to_wax",
+   "fieldtype": "Float",
+   "label": "RPT to Wax Ratio"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "wax_to_gold_10",
+   "fieldtype": "Float",
+   "label": "Wax TO 10KT Gold Ratio"
+  },
+  {
+   "fieldname": "wax_to_gold_14",
+   "fieldtype": "Float",
+   "label": "Wax TO 14KT Gold Ratio"
+  },
+  {
+   "fieldname": "wax_to_gold_18",
+   "fieldtype": "Float",
+   "label": "Wax TO 18KT Gold Ratio"
+  },
+  {
+   "fieldname": "wax_to_gold_22",
+   "fieldtype": "Float",
+   "label": "Wax TO 22KT Gold Ratio"
+  },
+  {
+   "fieldname": "wax_to_silver",
+   "fieldtype": "Float",
+   "label": "Wax to Silver Ratio"
+  },
+  {
+   "fieldname": "cad_to_rpt",
+   "fieldtype": "Float",
+   "label": "Cad to RPT Ratio"
+  },
+  {
+   "fieldname": "refining_details_section",
+   "fieldtype": "Section Break",
+   "label": "Refining Details"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "refining_warehouse",
+   "fieldtype": "Link",
+   "label": "Refining Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "refined_metal",
+   "fieldtype": "Link",
+   "label": "Refined Metal",
+   "options": "Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-02-04 13:11:19.596115",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Jewellery Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-11-11 02:56:42.151354",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "item_name",
+  "column_break_3",
+  "size",
+  "qty",
+  "column_break_6",
+  "production_qty",
+  "ready_qty",
+  "column_break_9",
+  "balance_production_qty",
+  "balance_ready_qty",
+  "column_break_5",
+  "remaining_qty",
+  "description",
+  "reference_type",
+  "reference_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Size"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "production_qty",
+   "fieldtype": "Float",
+   "label": "Production Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ready_qty",
+   "fieldtype": "Float",
+   "label": "Ready Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "balance_production_qty",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Balance Production Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "balance_ready_qty",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Balance Ready Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remaining_qty",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Remaining Order Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "reference_type",
+   "fieldtype": "Link",
+   "label": "Reference type",
+   "options": "DocType",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Link",
+   "label": "Reference Name",
+   "options": "Design Order",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-11 16:15:16.689755",
+ "modified_by": "Administrator",
+ "module": "Jewellery Erpnext",
+ "name": "Melting Lot Design Order Detail",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
